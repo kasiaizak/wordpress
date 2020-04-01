@@ -1,0 +1,72 @@
+/*
+Theme Name: Kale Child
+Theme URI: https://www.lyrathemes.com/kale/
+Template: kale
+Author: LyraThemes
+Author URI: https://www.lyrathemes.com/
+Description: Kale is a charming and elegant, aesthetically minimal and uncluttered food blog theme that can also be used for a variety of purposes. Whether you want to share recipes or fashion tips, run a lifestyle, parenting or cooking blog, Kale is a perfect theme choice. Simple but feature-filled food blog or cooking blog WordPress theme with WooCommerce integration. Beautifully designed and extremely clean, Kale is super easy to set up and is optimized for search engines. Kale comes with a special front page; with featured posts and a large highlight post, the option to show a banner or a posts slider in the header, and RTL support. It also comes with built-in menus for displaying your social media presence, multiple blog feed layouts, text and image logo options, sidebar size options (compact and default), banner/slider color overlay options, multilevel menus, automatically responsive YouTube videos, and much more! Kale is versatile enough to be set up as a small business website as well, by using the a static page as the home page and using the special front page elements to showcase services or portfolio. Kale is backed by world class, one-on-one support, and a super active team of developers and designers ready to help!
+Tags: one-column,two-columns,three-columns,right-sidebar,grid-layout,flexible-header,custom-background,custom-colors,custom-header,custom-menu,featured-images,footer-widgets,full-width-template,theme-options,threaded-comments,translation-ready,food-and-drink,rtl-language-support
+Version: 2.5.1585572088
+Updated: 2020-03-30 14:41:28
+
+*/
+
+.entry {margin-bottom: 50px;}
+
+.entry-thumb {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.ngg-tagcloud ul.wp-tag-cloud {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 10px;
+	grid-template-columns: repeat(1fr 1fr 1fr);
+}
+
+.ngg-tagcloud ul.wp-tag-cloud a {font-size: 13px !important;}
+
+.ngg-tagcloud ul.wp-tag-cloud li {
+	line-height: initial;
+	margin: 0 !important;
+}
+
+.ngg-tagcloud ul.wp-tag-cloud li a {
+	color: #CFBC36;
+	height: unset !important;
+	vertical-align: top !important;
+}
+.ngg-tagcloud ul.wp-tag-cloud li [aria-label*=" hc "] {color: #CF5F9C;}
+.ngg-tagcloud ul.wp-tag-cloud li [aria-label*=" śl"] {color: #4AC2CF;}
+
+.tagcloud a {
+	font-size: 13px !important;
+	margin-right: 8px;
+}
+
+@media (min-width: 400px) and (max-width: 991px) {
+	.sidebar-default {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	
+	#nav_menu-3 {padding-right: 10px;}
+	
+	#tag_cloud-5 {
+		border-left: 1px solid #ddd;
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 659px) {
+	.ngg-tagcloud ul.wp-tag-cloud {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.ngg-tagcloud ul.wp-tag-cloud li {
+		margin-right: 10px !important;
+	}
+}
