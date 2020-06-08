@@ -1,3 +1,16 @@
+/*
+Theme Name: GeneratePress Child
+Theme URI: https://generatepress.com
+Template: generatepress
+Author: Tom Usborne
+Author URI: https://tomusborne.com
+Description: GeneratePress is a lightweight WordPress theme built with a focus on speed and usability. Performance is important to us, which is why a fresh GeneratePress install adds less than 15kb (gzipped) to your page size. We take full advantage of the new block editor (Gutenberg), which gives you more control over creating your content. If you use page builders, GeneratePress is the right theme for you. It is completely compatible with all major page builders, including Beaver Builder and Elementor. Thanks to our emphasis on WordPress coding standards, we can boast full compatibility with all well-coded plugins, including WooCommerce. GeneratePress is fully responsive, uses valid HTML/CSS and is translated into over 25 languages by our amazing community of users. A few of our many features include microdata integration, 9 widget areas, 5 navigation locations, 5 sidebar layouts, dropdown menus (click or hover) and navigation color presets. Learn more and check out our powerful premium version at https://generatepress.com
+Tags: two-columns,three-columns,one-column,right-sidebar,left-sidebar,footer-widgets,blog,e-commerce,flexible-header,full-width-template,buddypress,custom-header,custom-background,custom-menu,custom-colors,sticky-post,threaded-comments,translation-ready,rtl-language-support,featured-images,theme-options
+Version: 2.4.2.1589403910
+Updated: 2020-05-13 23:05:10
+
+*/
+
 :root {
   --green: #6cbe45;
   --pink: #c53c8e;
@@ -267,6 +280,21 @@
 }
 .site-footer .footer-widgets .footer-widgets-container .inside-footer-widgets .inner-padding {
   padding: 0 20px !important;
+}
+
+.error404 .entry-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 960px) {
+  .error404 .entry-content {
+		flex-direction: row;
+  }
+  .error404 .entry-content > div {
+    margin-bottom: 3em;
+  }
 }
 
 .generate-back-to-top,

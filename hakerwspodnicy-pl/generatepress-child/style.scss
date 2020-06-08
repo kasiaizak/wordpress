@@ -167,6 +167,22 @@ $laptop1: 1025px;
 	}
 }
 
+
+.error404 .entry-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	@media (min-width: 960px) {
+		flex-direction: row;
+	}
+	& > div {
+		@media (max-width: 959px) {
+			margin-bottom: 3em;
+		}
+	}
+}
+
 .generate-back-to-top,
 .generate-back-to-top:visited {
   margin-bottom: 60px;
