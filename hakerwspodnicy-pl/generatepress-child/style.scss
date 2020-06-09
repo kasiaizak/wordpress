@@ -173,12 +173,12 @@ $laptop1: 1025px;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	@media (min-width: 960px) {
+	@media (min-width: 960px), handheld and (orientation: portrait) {
 		flex-direction: row;
 	}
 	& > div {
-		@media (max-width: 959px) {
-			margin-bottom: 3em;
+		@media (max-width: 959px), handheld and (orientation: portrait) {
+			margin-bottom: 3em !important;
 		}
 	}
 }
