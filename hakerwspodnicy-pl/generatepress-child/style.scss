@@ -46,7 +46,7 @@ $laptop1: 1025px;
 		display: flex;
 		flex-direction: column;
 		.entry-meta > span {border: none;}
-		.entry-content {order: 2;}
+		.entry-content, .entry-summary {order: 2;}
 	}
 	@media (min-width: $tablet1) {
 		align-items: start;
@@ -57,7 +57,7 @@ $laptop1: 1025px;
 			"header header header"
 			"meta . content";
 	}
-	.entry-content {
+	.entry-content, .entry-summary {
 		@media (max-width: $tablet) {
 			margin-top: 1em;
 			order: 2;
