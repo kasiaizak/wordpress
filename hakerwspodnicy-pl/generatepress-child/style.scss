@@ -10,7 +10,7 @@ $laptop1: 1025px;
 
 .main-nav ul li a {letter-spacing: .05em;}
 
-.main-navigation {
+.main-navigation:not(.slideout-navigation) {
 	@media (min-width: $tablet) {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 		border-top: 1px solid rgba(0,0,0,.1);

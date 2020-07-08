@@ -21,20 +21,20 @@ Updated: 2020-05-13 23:05:10
 }
 
 @media (min-width: 720px) {
-  .main-navigation {
+  .main-navigation:not(.slideout-navigation) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .main-navigation ul li a {
+  .main-navigation:not(.slideout-navigation) ul li a {
     display: inline-block;
   }
-  .main-navigation ul li:after {
+  .main-navigation:not(.slideout-navigation) ul li:after {
     content: "\2022";
     display: inline-block;
     margin-top: -4px;
     vertical-align: middle;
   }
-  .main-navigation ul li:last-child:after {
+  .main-navigation:not(.slideout-navigation) ul li:last-child:after {
     content: "";
   }
 }
